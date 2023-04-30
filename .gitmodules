@@ -1,0 +1,3 @@
+[submodule "fncs"]
+	path = fncs
+	url = https://github.com/FNCS/fncs.git
