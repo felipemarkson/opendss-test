@@ -1,3 +1,6 @@
 [submodule "fncs"]
 	path = fncs
 	url = https://github.com/FNCS/fncs.git
+[submodule "HELICS-src"]
+	path = HELICS-src
+	url = https://github.com/GMLC-TDC/HELICS-src.git
