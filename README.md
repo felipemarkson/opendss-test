@@ -4,7 +4,7 @@
 - cmake
 - fpc
 - zeromq
-- czmqS
+- czmq
 
 
 ## Build

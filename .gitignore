@@ -1,6 +1,4 @@
 OpenDSS/*
 klusolve/*
-fncs-dist/*
-HELICS-dist/*
-linenoise-dist/*
-klusolve-dist/*
+dist/*
+!dist/README

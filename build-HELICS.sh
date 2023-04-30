@@ -1,12 +1,12 @@
 #!/bin/sh
 
-mkdir -p HELICS-dist
+nprocs=$(($(eval nproc) - 1))
+
 cd HELICS-src
 mkdir -p build
 cd build
-cmake -DBUILD_SHARED_LIBS=ON -DHELICS_DISABLE_BOOST=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=../../HELICS-dist ..
+cmake -DBUILD_SHARED_LIBS=ON -DHELICS_DISABLE_BOOST=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=../../dist ..
 git submodule update --init
-make -j4
-make install
+make -j$nprocs && make install
 cd ..
 rm -rf build
