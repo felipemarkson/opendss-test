@@ -2,3 +2,5 @@ OpenDSS/*
 klusolve/*
 dist/*
 !dist/README
+*.ini
+opendsscmd
