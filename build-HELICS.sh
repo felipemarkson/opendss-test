@@ -8,6 +8,7 @@ cd build
 cmake   -DBUILD_SHARED_LIBS=ON \
         -DHELICS_DISABLE_BOOST=ON \
         -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_STANDARD=20 \
         -DCMAKE_INSTALL_PREFIX=../../dist .. && \
 git submodule update --init && \
 make -j$nprocs && make install
